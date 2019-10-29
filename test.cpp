@@ -22,6 +22,8 @@ int main()
     list_1.insertAt(7,67);
     list_1.insert(55);
 
+    cout << list_1.seqSearch(6) << endl;
+    cout << list_1.seqSearch(99) << endl;
 
     return 0; 
 }
