@@ -1,9 +1,9 @@
-#ifndef H_unorderedArrayListType
-#define H_unorderedArrayListType
+#ifndef H_orderedArrayListType
+#define H_orderedArrayListType
 
 #include "arrayListType.h"
 
-class unorderedArrayListType: public arrayListType
+class orderedArrayListType: public arrayListType
 {
 public:
     void insertAt(int location, int insertItem);
@@ -12,7 +12,7 @@ public:
     int seqSearch(int searchItem) const;
     void remove(int removeItem);
 
-    unorderedArrayListType(int size = 100);
+    orderedArrayListType(int size = 100);
       //Constructor
 };
 

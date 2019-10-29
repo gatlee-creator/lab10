@@ -1,9 +1,9 @@
 #include <iostream>
-#include "unorderedArrayListType.h"
+#include "orderedArrayListType.h"
 
-using namespace std;
+using namespace std; 
 
-void unorderedArrayListType::insertAt(int location,
+void orderedArrayListType::insertAt(int location,
                                       int insertItem)
 {
     if (location < 0 || location >= maxSize)
@@ -23,7 +23,7 @@ void unorderedArrayListType::insertAt(int location,
     }
 } //end insertAt
 
-void unorderedArrayListType::insertEnd(int insertItem)
+void orderedArrayListType::insertEnd(int insertItem)
 {
     if (length >= maxSize)  //the list is full
         cout << "Cannot insert in a full list." << endl;
@@ -34,7 +34,7 @@ void unorderedArrayListType::insertEnd(int insertItem)
     }
 } //end insertEnd
 
-int unorderedArrayListType::seqSearch(int searchItem) const
+int orderedArrayListType::seqSearch(int searchItem) const
 {
     int loc;
     bool found = false;
@@ -54,7 +54,7 @@ int unorderedArrayListType::seqSearch(int searchItem) const
 } //end seqSearch
 
 
-void unorderedArrayListType::remove(int removeItem)
+void orderedArrayListType::remove(int removeItem)
 {
     int loc;
 
@@ -72,7 +72,7 @@ void unorderedArrayListType::remove(int removeItem)
     }
 } //end remove
 
-void unorderedArrayListType::replaceAt(int location, int repItem)
+void orderedArrayListType::replaceAt(int location, int repItem)
 {
     if (location < 0 || location >= length)
         cout << "The location of the item to be "
@@ -81,7 +81,7 @@ void unorderedArrayListType::replaceAt(int location, int repItem)
         list[location] = repItem;
 } //end replaceAt
 
-unorderedArrayListType::unorderedArrayListType(int size)
+orderedArrayListType::orderedArrayListType(int size)
                        : arrayListType(size)
 {
 }  //end constructor
