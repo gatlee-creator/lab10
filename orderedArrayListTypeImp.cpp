@@ -14,13 +14,13 @@ void orderedArrayListType::insert(int insertItem)
         bool found = false; 
         //seq search
         for(loc=0; loc < length; loc++){
-            if(list[loc] == insertItem){
+            if(list[loc] >= insertItem){
                 found = true;
                 break;
             }
         }
 
-        for(int i=length; (i = loc); i--)
+        for(int i=length; i <= loc; i--)
             list[i] = list[i - 1]; //move elements down
     
         list[loc] = insertItem; //insert insertitem
