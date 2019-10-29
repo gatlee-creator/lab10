@@ -25,5 +25,11 @@ int main()
     cout << list_1.seqSearch(6) << endl;
     cout << list_1.seqSearch(99) << endl;
 
+    list_1.remove(6);
+    list_1.remove(11); 
+    list_1.remove(44); //bad search 
+
+    list_1.print(); 
+
     return 0; 
 }
