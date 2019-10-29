@@ -39,13 +39,8 @@ void orderedArrayListType::insertAt(int location,
         cout << "Cannot insert in a full list" << endl;
     else
     {
-        for (int i = length; i > location; i--)
-            list[i] = list[i - 1];	//move the elements down
-
-        list[location] = insertItem; //insert the item at
-                                     //the specified position
-
-        length++;	//increment the length
+       insert(insertItem);
+       //in orderedList placing it at a location doesn't matter
     }
 } //end insertAt
 
