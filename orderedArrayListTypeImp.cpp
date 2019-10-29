@@ -20,7 +20,7 @@ void orderedArrayListType::insert(int insertItem)
             }
         }
 
-        for(int i=length; i <= loc; i--)
+        for(int i=length; i > loc; i--)
             list[i] = list[i - 1]; //move elements down
     
         list[loc] = insertItem; //insert insertitem
