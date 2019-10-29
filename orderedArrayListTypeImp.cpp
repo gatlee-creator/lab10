@@ -62,7 +62,7 @@ int orderedArrayListType::seqSearch(int searchItem) const
     loc = 0;
 
     while (loc < length && !found)
-        if (list[loc] == searchItem)
+        if (list[loc] >= searchItem) //search >= update. 
             found = true;
         else
             loc++;
