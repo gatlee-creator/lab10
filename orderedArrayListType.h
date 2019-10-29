@@ -6,6 +6,7 @@
 class orderedArrayListType: public arrayListType
 {
 public:
+    void insert(int insertItem); 
     void insertAt(int location, int insertItem);
     void insertEnd(int insertItem);
     void replaceAt(int location, int repItem);

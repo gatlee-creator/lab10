@@ -3,6 +3,32 @@
 
 using namespace std; 
 
+void orderedArrayListType::insert(int insertItem)
+{
+    if(length == 0) //list is empty
+        list[length++] = insertItem; //insert a beginning
+    else if(length == maxSize)
+        cout << "error: cannot insert in a full list" << endl;
+    else{
+        int loc;
+        bool found = false; 
+        //seq search
+        for(loc=0; loc < length; loc++){
+            if(list[loc] == insertItem){
+                found = true;
+                break;
+            }
+        }
+
+        for(int i=length; (i = loc); i--)
+            list[i] = list[i - 1]; //move elements down
+    
+        list[loc] = insertItem; //insert insertitem
+        length++; //increase len of list
+
+    }
+} //end insert 
+
 void orderedArrayListType::insertAt(int location,
                                       int insertItem)
 {
