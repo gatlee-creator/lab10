@@ -10,5 +10,18 @@ int main()
    
     list_1.print(); 
 
+    list_1.insertAt(2,6);
+    list_1.insertAt(0,1);
+
+    list_1.print(); 
+
+    list_1.insertEnd(2);
+    list_1.print();
+
+    //purposelly faulty 
+    list_1.insertAt(7,67);
+    list_1.insert(55);
+
+
     return 0; 
 }

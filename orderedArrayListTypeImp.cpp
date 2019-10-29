@@ -10,7 +10,7 @@ void orderedArrayListType::insert(int insertItem)
     else if(length == maxSize)
         cout << "error: cannot insert in a full list" << endl;
     else{
-        int loc = 0;
+        int loc;
         bool found = false; 
         //seq search
         for(loc=0; loc < length; loc++){
@@ -19,7 +19,7 @@ void orderedArrayListType::insert(int insertItem)
                 break;
             }
         }
-
+        
         for(int i=length; i > loc; i--)
             list[i] = list[i - 1]; //move elements down
     
