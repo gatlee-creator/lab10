@@ -50,8 +50,7 @@ void orderedArrayListType::insertEnd(int insertItem)
         cout << "Cannot insert in a full list." << endl;
     else
     {
-        list[length] = insertItem; //insert the item at the end
-        length++; //increment the length
+        insert(insertItem);
     }
 } //end insertEnd
 
