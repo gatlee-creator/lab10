@@ -116,6 +116,8 @@ arrayListType& arrayListType::operator=(const arrayListType &otherList){
 }
 
 ostream& operator<<(ostream& output, const arrayListType& alt){
-    alt.print(); //just call print 
+    //just call print
+    alt.print(); 
+
     return output; 
 }

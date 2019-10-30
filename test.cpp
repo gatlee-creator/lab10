@@ -50,5 +50,7 @@ int main()
     list_3.insert(8);
     list_1.print();
 
+    cout << list_3 << endl;
+
     return 0; 
 }

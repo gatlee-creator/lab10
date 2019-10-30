@@ -1,6 +1,9 @@
 #ifndef H_arrayListType
 #define H_arrayListType
 
+#include <iostream>
+
+
 class arrayListType
 {
 public:
