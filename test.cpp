@@ -40,5 +40,15 @@ int main()
     list_2.print();
     list_1.print();
 
+    list_2 = list_1;
+    list_2.print();
+
+    orderedArrayListType list_3 = list_1; 
+    list_3.print();
+
+    //checking if shallow copy could be occuring
+    list_3.insert(8);
+    list_1.print();
+
     return 0; 
 }
