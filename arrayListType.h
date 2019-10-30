@@ -108,6 +108,9 @@ public:
     arrayListType (const arrayListType& otherList);
        //Copy constructor
 
+    arrayListType& operator=(const arrayListType &otherList);
+    //Overload assignment operator 
+
     virtual ~arrayListType();
       //Destructor
       //Deallocate the memory occupied by the array.

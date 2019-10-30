@@ -103,3 +103,14 @@ arrayListType::arrayListType(const arrayListType& otherList)
     for (int j = 0; j < length; j++)  //copy otherList
         list [j] = otherList.list[j];
 }//end copy constructor
+
+arrayListType& arrayListType::operator=(const arrayListType &otherList){
+    
+    maxSize = otherList.maxSize;
+    length = otherList.length;
+
+    for (int j = 0; j < length; j++)  //copy otherList
+        list [j] = otherList.list[j];
+
+    return *this; //return whole object 
+}
