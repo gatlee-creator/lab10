@@ -114,3 +114,8 @@ arrayListType& arrayListType::operator=(const arrayListType &otherList){
 
     return *this; //return whole object 
 }
+
+ostream& operator<<(ostream& output, const arrayListType& alt){
+    alt.print(); //just call print 
+    return output; 
+}

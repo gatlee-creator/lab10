@@ -4,6 +4,10 @@
 class arrayListType
 {
 public:
+
+    friend std::ostream& operator<<(std::ostream& output, const arrayListType& alt);
+    //Overload stream insertion operator 
+
     bool isEmpty() const;
       //Function to determine whether the list is empty
       //Postcondition: Returns true if the list is empty;
