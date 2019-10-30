@@ -31,5 +31,14 @@ int main()
 
     list_1.print(); 
 
+    orderedArrayListType list_2(list_1); 
+    list_2.print();
+
+    list_2.remove(2);
+    list_1.insert(6);
+
+    list_2.print();
+    list_1.print();
+
     return 0; 
 }
