@@ -8,15 +8,15 @@ int main()
     list_1.insert(4);
     list_1.insertAt(3,11);
    
-    list_1.print(); 
+    cout << list_1 << endl; 
 
     list_1.insertAt(2,6);
     list_1.insertAt(0,1);
 
-    list_1.print(); 
+    cout << list_1 << endl; 
 
     list_1.insertEnd(2);
-    list_1.print();
+    cout << list_1 << endl;
 
     //purposelly faulty 
     list_1.insertAt(7,67);
@@ -29,26 +29,26 @@ int main()
     list_1.remove(11); 
     list_1.remove(44); //bad search 
 
-    list_1.print(); 
+    cout << list_1 << endl; 
 
     orderedArrayListType list_2(list_1); 
-    list_2.print();
+    cout << list_2 << endl;
 
     list_2.remove(2);
     list_1.insert(6);
 
-    list_2.print();
-    list_1.print();
+    cout << list_2 << endl;
+    cout << list_1 << endl;
 
     list_2 = list_1;
-    list_2.print();
+    cout << list_2 << endl;
 
     orderedArrayListType list_3 = list_1; 
-    list_3.print();
+    cout << list_3 << endl;
 
     //checking if shallow copy could be occuring
     list_3.insert(8);
-    list_1.print();
+    cout << list_1 << endl;
 
     cout << list_3 << endl;
 
