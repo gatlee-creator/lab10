@@ -1,3 +1,13 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program: ~/csc1720/Labs/lab10
+    Date: 10/30/19
+
+    This header file contains an abstract class for arrayListType.
+    The class defines prototypes for regular functions and pure virtual functions 
+    both relevant to arrayListType. 
+*/
 #ifndef H_arrayListType
 #define H_arrayListType
 

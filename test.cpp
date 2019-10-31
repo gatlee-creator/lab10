@@ -1,3 +1,12 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program: ~/csc1720/Labs/lab10
+    Date: 10/30/19
+
+    This program contains driver code to test the full extent of the
+    orderedArrayListType class. 
+*/
 #include "orderedArrayListType.h"
 #include <iostream>
 using namespace std;

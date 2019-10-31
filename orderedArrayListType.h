@@ -1,3 +1,12 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Location of program: ~/csc1720/Labs/lab10
+    Date: 10/30/19
+
+    This header file derives from arrayListType to create
+    the orderedArrayListType. 
+*/
 #ifndef H_orderedArrayListType
 #define H_orderedArrayListType
 
